@@ -16,3 +16,7 @@ plt.xlabel('Volatility (Std. Deviation)')
 plt.ylabel('Expected Returns')
 plt.title('Efficient Frontier')
 plt.show()
+
+# print the details of the 2 special portfolios
+print(min_variance_port.T)
+print(sharpe_portfolio.T)
