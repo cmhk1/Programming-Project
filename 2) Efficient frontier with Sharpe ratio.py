@@ -4,40 +4,45 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# get adjusted closing prices of 5 selected companies with Quandl
-quandl.ApiConfig.api_key = 'INSERT YOUR API KEY HERE'
-selected = ['CNP', 'F', 'WMT', 'GE', 'TSLA']
-data = quandl.get_table('WIKI/PRICES', ticker = selected,
-                        qopts = { 'columns': ['date', 'ticker', 'adj_close'] },
-                        date = { 'gte': '2014-1-1', 'lte': '2016-12-31' }, paginate=True)
+# get user's desired stocks
+n = int(input("Number of stocks to analyze: "))
+stocks = [] 
+for i in range(n):
+    stocks.append(input('Enter the ticker of stock number %i: ' %(i+1)))
 
-# reorganise data pulled by setting date as index with
-# columns of tickers and their corresponding adjusted prices
-clean = data.set_index('date')
-table = clean.pivot(columns='ticker')
+# sort stock in alphabetical order for calculation's sake
+stocks.sort()
+
+# get user's desired period of analysis
+start_date = input("Enter the start date of the analysis period in the format YYYY-MM-DD: ")
+end_date = input("Enter the end date of the analysis period in the format YYYY-MM-DD: ")
+
+# download adjusted closing price for each stock from Yahoo Finance
+data = web.DataReader(stocks, data_source='yahoo', start=start_date, end=end_date)['Adj Close']
+data.sort_index(inplace=True)
 
 # calculate daily and annual returns of the stocks
-returns_daily = table.pct_change()
+returns_daily = data.pct_change()
 returns_annual = returns_daily.mean() * 250
 
-# get daily and covariance of returns of the stock
+# get daily and annual covariance of returns of the stocks
 cov_daily = returns_daily.cov()
 cov_annual = cov_daily * 250
 
-# empty lists to store returns, volatility and weights of imiginary portfolios
+# create empty lists to store returns, volatility, sharpe ratio and weights of random portfolios
 port_returns = []
 port_volatility = []
 sharpe_ratio = []
 stock_weights = []
 
-# set the number of combinations for imaginary portfolios
-num_assets = len(selected)
+# set the number of combinations for random portfolios
+num_assets = len(stocks)
 num_portfolios = 50000
 
 #set random seed for reproduction's sake
 np.random.seed(101)
 
-# populate the empty lists with each portfolios returns,risk and weights
+# calculate for each random portfolio return, risk(volatility), sharpe ratio and weights; and store the results in the corresponding list 
 for single_portfolio in range(num_portfolios):
     weights = np.random.random(num_assets)
     weights /= np.sum(weights)
@@ -49,26 +54,25 @@ for single_portfolio in range(num_portfolios):
     port_volatility.append(volatility)
     stock_weights.append(weights)
 
-# a dictionary for Returns and Risk values of each portfolio
+# set a dictionary for returns, risk(volatility) and sharpe ratio of each portfolio
 portfolio = {'Returns': port_returns,
              'Volatility': port_volatility,
              'Sharpe Ratio': sharpe_ratio}
 
-# extend original dictionary to accomodate each ticker and weight in the portfolio
-for counter,symbol in enumerate(selected):
+# extend the dictionary to accomodate each ticker and weight in the portfolio
+for counter,symbol in enumerate(stocks):
     portfolio[symbol+' Weight'] = [Weight[counter] for Weight in stock_weights]
 
-# make a nice dataframe of the extended dictionary
+# make a dataframe of the extended dictionary
 df = pd.DataFrame(portfolio)
 
 # get better labels for desired arrangement of columns
-column_order = ['Returns', 'Volatility', 'Sharpe Ratio'] + [stock+' Weight' for stock in selected]
+column_order = ['Returns', 'Volatility', 'Sharpe Ratio'] + [stock+' Weight' for stock in stocks]
 
 # reorder dataframe columns
 df = df[column_order]
 
-# plot frontier, max sharpe & min Volatility values with a scatterplot
-plt.style.use('seaborn-dark')
+# plot the efficient frontier with a scatter plot coloured by the sharpe Ratio
 df.plot.scatter(x='Volatility', y='Returns', c='Sharpe Ratio',
                 cmap='RdYlGn', edgecolors='black', figsize=(10, 8), grid=True)
 plt.xlabel('Volatility (Std. Deviation)')
