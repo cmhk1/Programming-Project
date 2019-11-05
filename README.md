@@ -3,7 +3,7 @@
 This project is part of course "Programming - Introduction Level" at the University of St.-Gallen,HSG.
 
 # Context 
-Harry M. Markowitz is a pioneer of the Modern Portfolio Theory (MPT), he won a Nobel prize in Economics in 1990 for his famous thory of portfolio optimization with the efficient frontier.
+Harry M. Markowitz is a pioneer of the Modern Portfolio Theory (MPT), he won a Nobel prize in Economics in 1990 for his famous theory of portfolio optimization with the efficient frontier.
 
 # Assumptions of MPT
 - Investors are rational and avoid risks whenever possible
