@@ -16,5 +16,5 @@ Harry M. Markowitz is a pioneer of the Modern Portfolio Theory (MPT), he won a N
 
 # Expected outcome
 
-https://github.com/pescestefano96/Programming-Project/blob/master/Screenshot%202019-11-05%20at%2015.56.46.png
+
 
