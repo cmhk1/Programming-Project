@@ -17,7 +17,7 @@ Harry M. Markowitz is a pioneer of the Modern Portfolio Theory (MPT), he won a N
 # How to use
 1. Make sure that you have installed all the necessary modules
 
-2. When runing the code, you will be ask for how many stocks you want to analyze. When this is done, you have to give their tickers name. We are using yahoo finance to get our datas, so make sure your ticker correpsond to the exiting ones on https://finance.yahoo.com/.
+2. When runing the code, you will be asked for how many stocks you want to analyze. When this is done, you have to give their tickers name. We are using yahoo finance to get our datas, so make sure your tickers correpsond to the exiting ones on https://finance.yahoo.com/.
 
 3. For the time frame to analyze, enter the desire starting date and then ending date under the format: YYYY-MM-DD
 
