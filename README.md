@@ -37,7 +37,7 @@ Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Pr
 
 **The sharpe portfolio is:** 
 
-- **Returns**       0.236359
+**Returns**       0.236359
 - **Volatility**    0.258548
 - **Sharpe Ratio**  0.914177
 - **AAPL Weight**   0.887478
@@ -47,13 +47,13 @@ Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Pr
                 
 **The minimum variance portfolio is:**
 
-- Returns       0.119080
-- Volatility    0.224987
-- Sharpe Ratio  0.529274
-- AAPL Weight   0.624847
-- CS Weight     0.341588
-- UBER Weight   0.032467
-- UBS Weight    0.001098
+- **Returns**      0.119080
+- **Volatility**    0.224987
+- **Sharpe Ratio**  0.529274
+- **AAPL Weight**   0.624847
+- **CS Weight**     0.341588
+- **UBER Weight**   0.032467
+- **UBS Weight**    0.001098
 
 
 ### Credits
