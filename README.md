@@ -1,2 +1,3 @@
-# Programming-Project
-Project for the HSG course "Programming - Introduction Level"
+# Markowitz’s Efficient Frontier & Portfolio Optimization with Python
+Project for programming course at HSG - "Introduction level"
+
