@@ -37,7 +37,7 @@ Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Pr
 
 **The sharpe portfolio is:** 
 
-**Returns**       0.236359
+- **Returns**       0.236359
 - **Volatility**    0.258548
 - **Sharpe Ratio**  0.914177
 - **AAPL Weight**   0.887478
