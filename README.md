@@ -18,7 +18,12 @@ Modern Portfolio Theory is a theory about how investors construct portfolios tha
 # How to use
 1. Make sure that you have installed all the necessary modules
 
-<addr>` import numpy <addr>`
+<addr>` import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import pandas_datareader.data as web
+import matplotlib.pyplot as plt
+  
 
 2. When runing the code, you will be asked for how many stocks you want to analyze. When this is done, you have to give their tickers name. We are using yahoo finance to get our datas, so make sure your tickers correpsond to the exiting ones on https://finance.yahoo.com/.
 
