@@ -30,28 +30,30 @@ In addition to this, for both portfolios, the return over the period, volatility
 
 ### Example
 
-Let's use 4 stocks: Apple (AAPL); UBER (UBER); UBS (UBS); Credit Suisse (CS)
+Let's use 4 stocks: *Apple (AAPL); UBER (UBER); UBS (UBS); Credit Suisse (CS)*
 The time frame: 2010-10-10 until 2019-11-05
 
 Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Screenshot%202019-11-05%20at%2015.56.46.png)
 
-Portfolio allocation:
+**The sharpe portfolio is: 
 
-Returns       0.236359
-Volatility    0.258548
-Sharpe Ratio  0.914177
-AAPL Weight   0.887478
-CS Weight     0.077132
-UBER Weight   0.011053
-UBS Weight    0.024337
+- **Returns**       0.236359
+- **Volatility**    0.258548
+- **Sharpe Ratio**  0.914177
+- **AAPL Weight**   0.887478
+- **CS Weight**     0.077132
+- **UBER Weight**   0.011053
+- **UBS Weight**    0.024337
                 
-Returns       0.119080
-Volatility    0.224987
-Sharpe Ratio  0.529274
-AAPL Weight   0.624847
-CS Weight     0.341588
-UBER Weight   0.032467
-UBS Weight    0.001098
+**The minimum variance portfolio is:
+
+- Returns       0.119080
+- Volatility    0.224987
+- Sharpe Ratio  0.529274
+- AAPL Weight   0.624847
+- CS Weight     0.341588
+- UBER Weight   0.032467
+- UBS Weight    0.001098
 
 
 ### Credits
