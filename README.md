@@ -3,7 +3,7 @@
 This project is part of course *"Programming - Introduction Level"* at the University of St.-Gallen,HSG.
 
 ### Context 
-Harry M. Markowitz is a 1990 nobel prize winner for beeing a pioneer of the Modern Portfolio Theory (MPT) which is about how investors construct portfolios that maximise their expected returns for given levels of risk. 
+Harry M. Markowitz is a 1990 Nobel prize winner for beeing a pioneer of the Modern Portfolio Theory (MPT) which is about how investors construct portfolios that maximise their expected returns for given levels of risk. 
 
 
 ### Assumptions of MPT
