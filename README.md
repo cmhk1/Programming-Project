@@ -14,3 +14,5 @@ Harry M. Markowitz is a pioneer of the Modern Portfolio Theory (MPT), he won a N
 - Investors have unlimited access to borrow and lend money at the risk free rate
 
 
+# Expected outcome
+
