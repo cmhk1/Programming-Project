@@ -28,6 +28,8 @@ Harry M. Markowitz is a 1990 nobel prize winner for beeing a pioneer of the Mode
 A graphical representation of the efficient frontier will appear, displaying the minimun variance portfolio as well as maximum sharpe ratio portfolio according to the stocks and time frame that you input.
 In addition to this, for both portfolios, the return over the period, volatility, sharpe ratio as well as the weights of each stocks within your portfolio will be displayed.
 
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Screenshot%202019-11-05%20at%2015.56.46.png)
 
 ### Credits
 
