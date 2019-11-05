@@ -1,12 +1,12 @@
-# Markowitz’s Efficient Frontier & Portfolio Optimization with Python
+## Markowitz’s Efficient Frontier & Portfolio Optimization with Python
 
 This project is part of course *"Programming - Introduction Level"* at the University of St.-Gallen,HSG.
 
-# Context 
+### Context 
 Harry M. Markowitz is a pioneer of the Modern Portfolio Theory (MPT), he won a Nobel prize in Economics in 1990 for it.
 Modern Portfolio Theory is a theory about how investors construct portfolios that maximise their expected returns for given levels of risk. This is displayed by the efficient frontier.
 
-## Assumptions of MPT
+### Assumptions of MPT
 - Investors are rational and avoid risks whenever possible
 - Investors aim for the maximum returns for their investment
 - All investors share the aim maximizing their expected returns
@@ -15,21 +15,21 @@ Modern Portfolio Theory is a theory about how investors construct portfolios tha
 - Investors have unlimited access to borrow and lend money at the risk free rate
 
 
-# How to use
+### How to use
 1. Make sure that you have installed all the necessary modules
 
 2. When runing the code, you will be asked for how many stocks you want to analyze. When this is done, you have to give their tickers name. We are using yahoo finance to get our datas, so make sure your tickers correpsond to the exiting ones on https://finance.yahoo.com/.
 
-3. For the time frame to analyze, enter the desire starting date and then ending date under the format: <addr> YYYY-MM-DD
+3. For the time frame to analyze, enter the desire starting date and then ending date under the format: *YYYY-MM-DD
 
-# Expected outcome
+### Expected outcome
 
 A graphical representation of the efficient frontier will appear, displaying the minimun variance portfolio as well as maximum sharpe ratio portfolio according to the stocks and time frame that you input.
 In addition to this, for both portfolios, the return over the period, volatility, sharpe ratio as well as the weights of each stocks within your portfolio will be displayed.
 
 
 
-# Credits
+### Credits
 
 We inspired ourselves and took some of the code from:
 
