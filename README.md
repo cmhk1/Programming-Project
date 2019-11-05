@@ -20,7 +20,7 @@ Harry M. Markowitz is a 1990 nobel prize winner for beeing a pioneer of the Mode
 
 2. When runing the code, you will be asked for how many stocks you want to analyze. When this is done, you have to give their tickers name. We are using yahoo finance to get our datas, so make sure your tickers correpsond to the exiting ones on https://finance.yahoo.com/.
 
-3. For the time frame to analyze, enter the desire starting date and then ending date under the format: *YYYY-MM-DD
+3. For the time frame to analyze, enter the desire starting date and then ending date under the format: YYYY-MM-DD
 
 
 ### Expected outcome
@@ -30,12 +30,12 @@ In addition to this, for both portfolios, the return over the period, volatility
 
 ### Example
 
-Let's use 4 stocks: *Apple (AAPL); UBER (UBER); UBS (UBS); Credit Suisse (CS)*
+Let's use 4 stocks: *Apple (AAPL); UBER (UBER); UBS (UBS); Credit Suisse (CS).*
 The time frame: 2010-10-10 until 2019-11-05
 
 Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Screenshot%202019-11-05%20at%2015.56.46.png)
 
-**The sharpe portfolio is: 
+**The sharpe portfolio is:** 
 
 - **Returns**       0.236359
 - **Volatility**    0.258548
@@ -45,7 +45,7 @@ Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Pr
 - **UBER Weight**   0.011053
 - **UBS Weight**    0.024337
                 
-**The minimum variance portfolio is:
+**The minimum variance portfolio is:**
 
 - Returns       0.119080
 - Volatility    0.224987
