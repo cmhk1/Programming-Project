@@ -1,25 +1,28 @@
 # import needed modules
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import pandas_datareader.data as web
-%matplotlib inline
 import matplotlib.pyplot as plt
 
 # get user's desired stocks
 n = int(input("Number of stocks to analyze: "))
-stocks = [] 
+stocks = []
 for i in range(n):
-    stocks.append(input('Enter the ticker of stock number %i: ' %(i+1)))
+    stocks.append(input('Enter the ticker of stock number %i: ' % (i+1)))
 
 # sort stock in alphabetical order for calculation's sake
 stocks.sort()
 
 # get user's desired period of analysis
-start_date = input("Enter the start date of the analysis period in the format YYYY-MM-DD: ")
-end_date = input("Enter the end date of the analysis period in the format YYYY-MM-DD: ")
+start_date = input(
+    "Enter the start date of the analysis period in the format YYYY-MM-DD: ")
+end_date = input(
+    "Enter the end date of the analysis period in the format YYYY-MM-DD: ")
 
 # download adjusted closing price for each stock from Yahoo Finance
-data = web.DataReader(stocks, data_source='yahoo', start=start_date, end=end_date)['Adj Close']
+data = web.DataReader(stocks, data_source='yahoo',
+                      start=start_date, end=end_date)['Adj Close']
 data.sort_index(inplace=True)
 
 # calculate daily and annual returns of the stocks
@@ -40,10 +43,10 @@ stock_weights = []
 num_assets = len(stocks)
 num_portfolios = 50000
 
-#set random seed for reproduction's sake
+# set random seed for reproduction's sake
 np.random.seed(101)
 
-# calculate for each random portfolio return, risk(volatility), sharpe ratio and weights; and store the results in the corresponding list 
+# calculate for each random portfolio return, risk(volatility), sharpe ratio and weights; and store the results in the corresponding list
 for single_portfolio in range(num_portfolios):
     weights = np.random.random(num_assets)
     weights /= np.sum(weights)
@@ -61,14 +64,15 @@ portfolio = {'Returns': port_returns,
              'Sharpe Ratio': sharpe_ratio}
 
 # extend the dictionary to accomodate each ticker and weight in the portfolio
-for counter,symbol in enumerate(stocks):
+for counter, symbol in enumerate(stocks):
     portfolio[symbol+' Weight'] = [Weight[counter] for Weight in stock_weights]
 
 # make a dataframe of the extended dictionary
 df = pd.DataFrame(portfolio)
 
 # get better labels for desired arrangement of columns
-column_order = ['Returns', 'Volatility', 'Sharpe Ratio'] + [stock+' Weight' for stock in stocks]
+column_order = ['Returns', 'Volatility', 'Sharpe Ratio'] + \
+    [stock+' Weight' for stock in stocks]
 
 # find the min-volatility & max-sharpe ratio values in the dataframe
 min_volatility = df['Volatility'].min()
@@ -82,8 +86,10 @@ min_variance_port = df.loc[df['Volatility'] == min_volatility]
 plt.style.use('seaborn-dark')
 df.plot.scatter(x='Volatility', y='Returns', c='Sharpe Ratio',
                 cmap='RdYlGn', edgecolors='black', figsize=(10, 8), grid=True)
-plt.scatter(x=sharpe_portfolio['Volatility'], y=sharpe_portfolio['Returns'], c='red', marker='D', s=200)
-plt.scatter(x=min_variance_port['Volatility'], y=min_variance_port['Returns'], c='blue', marker='D', s=200 )
+plt.scatter(x=sharpe_portfolio['Volatility'],
+            y=sharpe_portfolio['Returns'], c='red', marker='D', s=200)
+plt.scatter(x=min_variance_port['Volatility'],
+            y=min_variance_port['Returns'], c='blue', marker='D', s=200)
 plt.xlabel('Volatility (Std. Deviation)')
 plt.ylabel('Expected Returns')
 plt.title('Efficient Frontier')
