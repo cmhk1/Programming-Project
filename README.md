@@ -1,9 +1,9 @@
 # Markowitz’s Efficient Frontier & Portfolio Optimization with Python
 
-This project is part of the programming course at HSG - "Introduction level".
+This project is part of course "Programming - Introduction Level" at the University of St.-Gallen,HSG.
 
-# Context
-Harry M. Markowitz is a pioneer of the Modern Portfolio Theory (MPT), he won a Nobel prize in Economics in 1990.
+# Context 
+Harry M. Markowitz is a pioneer of the Modern Portfolio Theory (MPT), he won a Nobel prize in Economics in 1990 for his famous thory of portfolio optimization with the efficient frontier.
 
 # Assumptions of MPT
 - Investors are rational and avoid risks whenever possible
@@ -23,7 +23,8 @@ Harry M. Markowitz is a pioneer of the Modern Portfolio Theory (MPT), he won a N
 
 # Expected outcome
 
-
+A graphical representation of the efficient frontier will appear, displaying the minimun variance portfolio as well as maximum sharpe ratio portfolio according to the stocks and time frame that you input.
+In addition to this, for both portfolios, the return over the period, volatility, sharpe ratio as well as the weights of each stocks within your portfolio will be displayed.
 
 # Credits
 
