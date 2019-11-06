@@ -31,7 +31,7 @@ Two portfolios along the efficient frontier are of particular interest:
 
 3.	Calculate the return and covariance of the assets in the portfolio.
 
-4.	Implement the Monte Carlo method to perform 1000 simulations. Each simulation corresponds to a portfolio composed of the selected assets, for which every time different weights are randomly generated (making sure that the sum of the weights is 100%). Then calculate on the basis of them, the return, the volatility and the Sharpe Ratio for each of the randomly generated portfolios.
+4.	Implement the Monte Carlo method to perform 50'000 simulations. Each simulation corresponds to a portfolio composed of the selected assets, for which every time different weights are randomly generated (making sure that the sum of the weights is 100%). Then calculate on the basis of them, the return, the volatility and the Sharpe Ratio for each of the randomly generated portfolios.
 
 5.	Plot the efficient frontier: create a scatter plot with the combinations of returns and volatility obtained, highlighting the portfolio that maximizes the Sharpe ratio and the portfolio that minimizes the variance. In addition, it is also possible to color the data according to the Sharpe Ratio of each portfolio, to have a visible measure of comparison.
 
