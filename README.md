@@ -1,6 +1,7 @@
 ## Markowitz’s Efficient Frontier & Portfolio Optimization with Python
 
 This project is part of the course *"Programming - Introduction Level"* at the University of St. Gallen, HSG. Its purpose is to construct a so-called *“Efficient Frontier”* (Markowitz, 1952) and implement a stock portfolio optimization in Python for a specific time period from real stock data. Moreover, we want to find the composition of the maximum Sharpe-ratio (Sharpe, 1966) portfolio as well as the minimum variance portfolio. 
+
 Afterwards, the theoretical background and the structure of the code are explained.
 
 ### Context 
