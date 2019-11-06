@@ -3,10 +3,13 @@
 This project is part of course *"Programming - Introduction Level"* at the University of St. Gallen, HSG.
 
 ### Context 
+
 Harry M. Markowitz is a 1990 Nobel prize winner for being a pioneer of the Modern Portfolio Theory (MPT) which is about how investors construct portfolios that maximise their expected returns for given levels of risk. 
 
+Our aim is to showcase to the user the efficient frontier of desired stocks within a specific perido as well as the composition of the sharpe portfolio as well as the minimum variance portfolio.
 
 ### Assumptions of MPT
+
 - Investors are rational and avoid risks whenever possible
 - Investors aim for the maximum returns for their investment
 - All investors share the aim maximizing their expected returns
@@ -16,12 +19,14 @@ Harry M. Markowitz is a 1990 Nobel prize winner for being a pioneer of the Moder
 
 
 ### How to use
+
 1. Make sure that you have installed all the necessary modules
 
 2. When runing the code, you will be asked for how many stocks you want to analyze. When this is done, you have to give their tickers name. We are using yahoo finance to get our datas, so make sure your tickers correpsond to the exiting ones on https://finance.yahoo.com/.
 
 3. For the time frame to analyze, enter the desire starting date and then ending date under the format: YYYY-MM-DD
 
+(4. Depending on the compiler you use, you have to close the efficient frontier window to get the optimization of the two desired portfolios)
 
 ### Expected outcome
 
