@@ -7,7 +7,7 @@ Afterwards, the theoretical background and the structure of the code are explain
 ### Context 
 Harry M. Markowitz is a 1990 Nobel prize winner for being a pioneer of the Modern Portfolio Theory (MPT) which is about how investors construct portfolios that maximise their expected returns for given levels of risk. 
 
-#### Assumptions of MPT
+Assumptions of MPT:
 - Investors are rational and avoid risks whenever possible
 - Investors aim for the maximum returns for their investment
 - All investors share the aim maximizing their expected returns
