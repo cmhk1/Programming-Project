@@ -33,7 +33,7 @@ In addition to this, for both portfolios, the return over the period, volatility
 Let's use 4 stocks: *Apple (AAPL); UBER (UBER); UBS (UBS); Credit Suisse (CS).*
 The time frame: 2010-10-10 until 2019-11-05
 
-Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Screenshot%202019-11-05%20at%2015.56.46.png)
+Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier.png)
 
 **The sharpe portfolio is:** 
 
