@@ -47,7 +47,7 @@ Two portfolios along the efficient frontier are of particular interest:
 Depending on the compiler you're using, you may have to close the efficient frontier window to get the optimization of the two desired portfolios to appear.
 
 ### Expected outcome
-The expected outcome is a graphical representation of the efficient frontier, displaying the maximum Sharpe ratio portfolio as well as the minimum variance portfolio according to the stocks and time frame of your inputs. In addition, for the two portfolios mentioned above, you will see the return, volatility, sharpe ratio and stock weights.
+The expected outcome is a graphical representation of the efficient frontier, displaying the maximum Sharpe ratio portfolio as well as the minimum variance portfolio according to the stocks and time frame of your inputs. In addition, for these two portfolios, you will see the return, volatility, sharpe ratio and stock weights.
 
 #### Example
 Let's use 4 stocks: *Apple (AAPL); Credit Suisse (CS); AMAZON (AMZN); UBS (UBS).*
