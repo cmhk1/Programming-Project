@@ -55,7 +55,7 @@ The time frame is from 2010-10-10 until 2019-11-05.
 
 Outcome: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier.png)
 
-**The sharpe portfolio is:** 
+**The portoflio with the maximum sharpe ratio is:** 
 - **Returns**       0.290213
 - **Volatility**    0.237612
 - **Sharpe Ratio**  1.221374
@@ -64,7 +64,7 @@ Outcome: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/
 - **AMZN Weight**   0.470743
 - **UBS Weight**    0.012836
                 
-**The minimum variance portfolio is:**
+**The portfolio with the minimum variance is:**
 - **Returns**       0.188358
 - **Volatility**    0.213229
 - **Sharpe Ratio**  0.883357
