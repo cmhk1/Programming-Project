@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 
 # get user's desired stocks
 n = int(input("Number of stocks to analyze: "))
-stocks = []
+stocks = [] 
 for i in range(n):
-    stocks.append(input('Enter the ticker of stock number %i: ' % (i+1)))
+    stocks.append(input('Enter the ticker of stock number %i: ' %(i+1)))
 
-# sort stock in alphabetical order for calculation's sake
+# sort stock in alphabetical order for calculation purposes
 stocks.sort()
 
 # get user's desired period of analysis
@@ -29,24 +29,27 @@ data.sort_index(inplace=True)
 returns_daily = data.pct_change()
 returns_annual = returns_daily.mean() * 250
 
-# get daily and annual covariance of returns of the stocks
+# calculate daily and annual covariance of returns of the stocks
 cov_daily = returns_daily.cov()
 cov_annual = cov_daily * 250
 
-# create empty lists to store returns, volatility, sharpe ratio and weights of random portfolios
+# MONTE CARLO SIMULATION:
+# create empty lists to store returns, volatility, sharpe ratio and weights of the
+# randomly generated portfolios
 port_returns = []
 port_volatility = []
 sharpe_ratio = []
 stock_weights = []
 
-# set the number of combinations for random portfolios
+# set the number of combinations for the randomly generated portfolios
 num_assets = len(stocks)
 num_portfolios = 50000
 
 # set random seed for reproduction's sake
 np.random.seed(101)
 
-# calculate for each random portfolio return, risk(volatility), sharpe ratio and weights; and store the results in the corresponding list
+# calculate for each randomly generated portfolio return, risk(volatility), sharpe
+# ratio and weights; and store the results in the corresponding list 
 for single_portfolio in range(num_portfolios):
     weights = np.random.random(num_assets)
     weights /= np.sum(weights)
@@ -58,19 +61,21 @@ for single_portfolio in range(num_portfolios):
     port_volatility.append(volatility)
     stock_weights.append(weights)
 
+# PLOT THE RESULTS:
 # set a dictionary for returns, risk(volatility) and sharpe ratio of each portfolio
 portfolio = {'Returns': port_returns,
              'Volatility': port_volatility,
              'Sharpe Ratio': sharpe_ratio}
 
-# extend the dictionary to accomodate each ticker and weight in the portfolio
-for counter, symbol in enumerate(stocks):
+# extend the dictionary to accomodate each ticker and weight of the stocks 
+# in the portfolio
+for counter,symbol in enumerate(stocks):
     portfolio[symbol+' Weight'] = [Weight[counter] for Weight in stock_weights]
 
 # make a dataframe of the extended dictionary
 df = pd.DataFrame(portfolio)
 
-# get better labels for desired arrangement of columns
+# get better labels for the desired arrangement of columns
 column_order = ['Returns', 'Volatility', 'Sharpe Ratio'] + \
     [stock+' Weight' for stock in stocks]
 
@@ -78,23 +83,23 @@ column_order = ['Returns', 'Volatility', 'Sharpe Ratio'] + \
 min_volatility = df['Volatility'].min()
 max_sharpe = df['Sharpe Ratio'].max()
 
-# use the min & max values to locate and create the two portfolios
+# use the min-volatility & max-sharpe ratio values to locate and create the two 
+# portfolios of interest
 sharpe_portfolio = df.loc[df['Sharpe Ratio'] == max_sharpe]
 min_variance_port = df.loc[df['Volatility'] == min_volatility]
 
-# plot the efficient frontier with a scatter plot coloured by the sharpe Ratio, higlighting the min-volatility & max-sharpe ratio portfolios
-plt.style.use('seaborn-dark')
+# plot the efficient frontier with a scatter plot coloured by the sharpe Ratio
 df.plot.scatter(x='Volatility', y='Returns', c='Sharpe Ratio',
                 cmap='RdYlGn', edgecolors='black', figsize=(10, 8), grid=True)
 plt.xlabel('Volatility')
 plt.ylabel('Expected Returns')
 plt.title('Efficient Frontier')
-# plot red mark to highlight position of portfolio with the highest Sharpe Ratio
-plt.scatter(x=sharpe_portfolio['Volatility'], y=sharpe_portfolio['Returns'],
-            c='red', marker='D', s=200, label='Max-sharpe-ratio portfolio')
-# plot green mark to highlight position of portfolio with the lowest variance
-plt.scatter(x=min_variance_port['Volatility'], y=min_variance_port['Returns'],
-            c='blue', marker='D', s=200, label='Min-variance portfolio')
+# plot a red mark to highlight position of portfolio with the highest Sharpe ratio
+plt.scatter(x=sharpe_portfolio['Volatility'], y=sharpe_portfolio['Returns'], 
+            c='red', marker='D', s=200, label = 'Max-sharpe-ratio portfolio')
+# plot a green mark to highlight position of portfolio with the lowest variance
+plt.scatter(x=min_variance_port['Volatility'], y=min_variance_port['Returns'], 
+            c='blue', marker='D', s=200, label = 'Min-variance portfolio')
 plt.legend()
 plt.show()
 
