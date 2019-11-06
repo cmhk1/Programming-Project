@@ -5,15 +5,15 @@ This project is part of the course *"Programming - Introduction Level"* at the U
 Afterwards, the theoretical background and the structure of the code are explained.
 
 ### Context 
-Harry M. Markowitz is a 1990 Nobel prize winner for being a pioneer of the Modern Portfolio Theory (MPT) which is about how investors construct portfolios that maximise their expected returns for given levels of risk. 
+Harry M. Markowitz is a 1990 Nobel prize winner for being a pioneer of the Modern Portfolio Theory (MPT), which deals with how investors should construct investment portfolios in order to the expected returns for given levels of risk. 
 
 Assumptions of MPT:
-- Investors are rational and avoid risks whenever possible
-- Investors aim for the maximum returns for their investment
-- All investors share the aim maximizing their expected returns
-- Commissions and taxes on the market are left out of consideration
+- Investors are rational and avoid risks whenever possible.
+- Investors aim for the maximum returns for their investment.
+- All investors share the aim maximizing their expected returns.
+- Commissions and taxes on the market are left out of consideration.
 - All investors have access to the same sources and level of all necessary information about investment decisions
-- Investors have unlimited access to borrow and lend money at the risk free rate (for simplicity's sake a risk free rate of 0% is assumed for this project)
+- Investors have unlimited access to borrow and lend money at the risk free rate (for simplicity's sake a risk free rate of 0% is assumed for this project).
 
 ### The concept of the Efficient Frontier
 According to the theory, it is possible to build an "efficient frontier", which graphically represents the optimal portfolios that offer the highest possible expected return for a given level of risk. This is based on the principle of diversification, i.e. the reduction of the portfolio's risk (standard deviation) by adding additional assets to the same portfolio. In practice, an investor tries to populate the portfolio with securities that offer high returns, but whose combined standard deviation is less than their individual standard deviations. If the optimization of the return/risk paradigm is successful, the portfolio aligns along the efficient frontier. If there are portfolios with higher returns for the same level of risk, the portfolio is not optimal and lies below the efficient frontier.
