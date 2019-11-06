@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import pandas_datareader.data as web
-%matplotlib inline
+import matplotlib.pyplot as plt
 
 # get user's desired stocks
 n = int(input("Number of stocks to analyze: "))
