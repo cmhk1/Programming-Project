@@ -1,6 +1,6 @@
 ## Markowitz’s Efficient Frontier & Portfolio Optimization with Python
 
-This project is part of the course *"Programming - Introduction Level"* at the University of St. Gallen, HSG. Its purpose is to construct a so-called *“efficient frontier”* (Markowitz, 1952)  and implement a stock portfolio optimization in Python from real stock data. Afterwards, the theoretical background and the structure of the code are explained.
+This project is part of the course *"Programming - Introduction Level"* at the University of St. Gallen, HSG. Its purpose is to construct a so-called *“Efficient Frontier”* (Markowitz, 1952)  and implement a stock portfolio optimization in Python from real stock data. Afterwards, the theoretical background and the structure of the code are explained.
 
 ### Context 
 
