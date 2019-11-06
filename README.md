@@ -1,6 +1,6 @@
 ## Markowitz’s Efficient Frontier & Portfolio Optimization with Python
 
-This project is part of the course *"Programming - Introduction Level"* at the University of St. Gallen (HSG). The purpose is to construct a so-called *“Efficient Frontier”* (Markowitz, 1952) and implement a stock portfolio optimization in Python for a specific time period using real stock data. Moreover, we want to find the composition of the maximum Sharpe-ratio (Sharpe, 1966) portfolio as well as the minimum variance portfolio. 
+This project is part of the course *"Programming - Introduction Level"* at the University of St. Gallen (HSG). The purpose is to construct a so-called *“Efficient Frontier”* (Markowitz, 1952) and implement a stock portfolio optimization in Python for a specific time period using real stock data. Moreover, we want to find the composition of the maximum Sharpe ratio (Sharpe, 1966) portfolio as well as the minimum variance portfolio. 
 
 Afterwards, the theoretical background and the structure of the code are explained.
 
@@ -40,22 +40,20 @@ Two portfolios along the efficient frontier are of particular interest:
 ### How to use
 1. Make sure that you have installed all the necessary modules.
 
-2. When runing the code, you will be asked for how many stocks you want to analyze. When this is done, you have to give their tickers name. We are using yahoo finance to get our datas, so make sure your tickers correpsond to the exiting ones on https://finance.yahoo.com/.
+2. When runing the code, you will be asked for how many stocks you want to analyze. When this is done, you have to input their tickers name. Yahoo finance is used to get the data, so make sure your tickers correpsond to the exiting ones on https://finance.yahoo.com/.
 
-3. For the time frame to analyze, enter the desire starting date and then ending date under the format: YYYY-MM-DD.
+3. For the time frame of analysis, enter the desired starting date and the desired ending date under the format: YYYY-MM-DD.
 
-(Depending on the compiler you use, you may have to close the efficient frontier window to get the optimization of the two desired portfolios to appear).
+(Depending on the compiler you're using, you may have to close the efficient frontier window to get the optimization of the two desired portfolios to appear).
 
 ### Expected outcome
-A graphical representation of the efficient frontier will appear, displaying the minimun variance portfolio as well as maximum sharpe ratio portfolio according to the stocks and time frame of your inputs.
+The expected outcome is a graphical representation of the efficient frontier, displaying the maximum Sharpe ratio portfolio as well as the minimum variance portfolio according to the stocks and time frame of your inputs. In addition, for the two portfolios mentioned above, you will see the return, volatility, sharpe ratio and stock weights.
 
-In addition to this, for both portfolios, the return over the period, volatility, sharpe ratio as well as the weights of each stocks within your portfolio will be displayed.
-
-### Example
+#### Example
 Let's use 4 stocks: *Apple (AAPL); Credit Suisse (CS); AMAZON (AMZN); UBS (UBS).*
-The time frame: 2010-10-10 until 2019-11-05
+The time frame is from 2010-10-10 until 2019-11-05.
 
-Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier.png)
+Outcome: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier.png)
 
 **The sharpe portfolio is:** 
 - **Returns**       0.290213
@@ -77,8 +75,7 @@ Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Pr
 
 
 ### Credits
-We inspired ourselves and took some of the code from:
-
+The project is inspired by and took part of the code from:
 - https://medium.com/python-data/effient-frontier-in-python-34b0c3043314
 - https://medium.com/python-data/efficient-frontier-portfolio-optimization-with-python-part-2-2-2fe23413ad94
 
