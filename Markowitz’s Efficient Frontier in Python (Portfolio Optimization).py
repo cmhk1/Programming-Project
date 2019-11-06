@@ -92,5 +92,5 @@ plt.legend()
 plt.show()
 
 # print the details of the two desired portfolios
-print("The portoflio with the maximum sharpe ratio is:\n", sharpe_portfolio.T)
-print("The portfolio with the minimum variance is:\n", min_variance_port.T)
+print("\nThe portoflio with the maximum sharpe ratio is:", sharpe_portfolio.T)
+print("\nThe portfolio with the minimum variance is:", min_variance_port.T)
