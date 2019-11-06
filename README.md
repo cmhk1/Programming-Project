@@ -26,7 +26,7 @@ Our aim is to showcase to the user the efficient frontier of desired stocks with
 
 3. For the time frame to analyze, enter the desire starting date and then ending date under the format: YYYY-MM-DD
 
-(4. Depending on the compiler you use, you have to close the efficient frontier window to get the optimization of the two desired portfolios)
+(Depending on the compiler you use, you may have to close the efficient frontier window to get the optimization of the two desired portfolios to appear)
 
 ### Expected outcome
 
