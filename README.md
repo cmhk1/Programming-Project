@@ -18,7 +18,7 @@ Assumptions of MPT:
 ### The concept of the Efficient Frontier
 According to the theory, it is possible to build an "efficient frontier", which graphically represents the optimal portfolios that offer the highest possible expected return for a given level of risk. This is based on the principle of diversification, i.e. the reduction of the portfolio's risk (standard deviation) by adding additional assets to the same portfolio. In practice, an investor tries to populate the portfolio with securities that offer high returns, but whose combined standard deviation is less than their individual standard deviations. If the optimization of the return/risk paradigm is successful, the portfolio aligns along the efficient frontier. If there are portfolios with higher returns for the same level of risk, the portfolio is not optimal and lies below the efficient frontier.
 
-The following diagram gives an overview of this concept: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier0.jpg)
+The following diagram gives an overview of this concept: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Attachments/Efficient_frontier0.jpg)
 
 Two portfolios along the efficient frontier are of particular interest: 
 -	The portfolio that maximises the Sharpe ratio, i.e. the ratio of return to risk; and
@@ -53,7 +53,7 @@ The expected outcome is a graphical representation of the efficient frontier, di
 Let's use 4 stocks: *Apple (AAPL); Credit Suisse (CS); AMAZON (AMZN); UBS (UBS).*
 The time frame is from 2010-10-10 until 2019-11-05.
 
-Outcome: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier.png)
+Outcome: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Attachments/Efficient_frontier.png)
 
 **The portoflio with the maximum sharpe ratio is:** 
 - **Returns**       0.290213
