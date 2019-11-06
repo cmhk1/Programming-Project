@@ -22,7 +22,7 @@ Our aim is to showcase to the user the efficient frontier of desired stocks with
 According to the theory, it is possible to build an "efficient frontier", which graphically represents the optimal portfolios that offer the highest possible expected return for a given level of risk. It is based on the principle of diversification, i.e. the reduction of the portfolio's risk (standard deviation) by adding additional assets to the same portfolio. In practice, an investor tries to populate the portfolio with securities that offer high returns, but whose combined standard deviation is less than their individual standard deviations. If the optimization of the return/risk paradigm is successful, the portfolio aligns along the efficient frontier. If there are portfolios with higher returns for the same level of risk, the portfolio is not optimal and lies below the efficient frontier.
 
 The following diagram gives an overview of this concept:
-![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier0.png)
+![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier0.jpg)
 
 Two portfolios along the efficient frontier are of particular interest: 
 -	The portfolio that maximises the Sharpe ratio, i.e. the ratio of return to risk; and
