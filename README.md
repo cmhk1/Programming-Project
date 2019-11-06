@@ -1,15 +1,12 @@
 ## Markowitz’s Efficient Frontier & Portfolio Optimization with Python
 
-This project is part of the course *"Programming - Introduction Level"* at the University of St. Gallen, HSG. Its purpose is to construct a so-called *“Efficient Frontier”* (Markowitz, 1952)  and implement a stock portfolio optimization in Python from real stock data. Afterwards, the theoretical background and the structure of the code are explained.
+This project is part of the course *"Programming - Introduction Level"* at the University of St. Gallen, HSG. Its purpose is to construct a so-called *“Efficient Frontier”* (Markowitz, 1952) and implement a stock portfolio optimization in Python for a specific time period from real stock data. Moreover, we want to find the composition of the maximum Sharpe-ratio (Sharpe, 1966) portfolio as well as the minimum variance portfolio. 
+Afterwards, the theoretical background and the structure of the code are explained.
 
 ### Context 
-
 Harry M. Markowitz is a 1990 Nobel prize winner for being a pioneer of the Modern Portfolio Theory (MPT) which is about how investors construct portfolios that maximise their expected returns for given levels of risk. 
 
-Our aim is to showcase to the user the efficient frontier of desired stocks within a specific perido as well as the composition of the sharpe portfolio as well as the minimum variance portfolio.
-
 ### Assumptions of MPT
-
 - Investors are rational and avoid risks whenever possible
 - Investors aim for the maximum returns for their investment
 - All investors share the aim maximizing their expected returns
@@ -18,18 +15,15 @@ Our aim is to showcase to the user the efficient frontier of desired stocks with
 - Investors have unlimited access to borrow and lend money at the risk free rate (for simplicity's sake a risk free rate of 0% is assumed for this project)
 
 ### The concept of the Efficient Frontier
-
 According to the theory, it is possible to build an "efficient frontier", which graphically represents the optimal portfolios that offer the highest possible expected return for a given level of risk. This is based on the principle of diversification, i.e. the reduction of the portfolio's risk (standard deviation) by adding additional assets to the same portfolio. In practice, an investor tries to populate the portfolio with securities that offer high returns, but whose combined standard deviation is less than their individual standard deviations. If the optimization of the return/risk paradigm is successful, the portfolio aligns along the efficient frontier. If there are portfolios with higher returns for the same level of risk, the portfolio is not optimal and lies below the efficient frontier.
 
-The following diagram gives an overview of this concept:
-![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier0.jpg)
+The following diagram gives an overview of this concept: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier0.jpg)
 
 Two portfolios along the efficient frontier are of particular interest: 
 -	The portfolio that maximises the Sharpe ratio, i.e. the ratio of return to risk; and
 -	The portfolio that minimizes variance and thus risk for the investor.
 
 ### Building an Efficient Frontier in Python
-
 1.	Identify the assets to be considered in the portfolio.
 
 2.	Identify the desired period of analysis.
@@ -43,7 +37,6 @@ Two portfolios along the efficient frontier are of particular interest:
 6.	Get the data for the two portfolios of interest: the max-sharpe-ratio portfolio and the min-variance-portfolio.
 
 ### How to use
-
 1. Make sure that you have installed all the necessary modules.
 
 2. When runing the code, you will be asked for how many stocks you want to analyze. When this is done, you have to give their tickers name. We are using yahoo finance to get our datas, so make sure your tickers correpsond to the exiting ones on https://finance.yahoo.com/.
@@ -53,20 +46,17 @@ Two portfolios along the efficient frontier are of particular interest:
 (Depending on the compiler you use, you may have to close the efficient frontier window to get the optimization of the two desired portfolios to appear).
 
 ### Expected outcome
-
 A graphical representation of the efficient frontier will appear, displaying the minimun variance portfolio as well as maximum sharpe ratio portfolio according to the stocks and time frame of your inputs.
 
 In addition to this, for both portfolios, the return over the period, volatility, sharpe ratio as well as the weights of each stocks within your portfolio will be displayed.
 
 ### Example
-
 Let's use 4 stocks: *Apple (AAPL); Credit Suisse (CS); AMAZON (AMZN); UBS (UBS).*
 The time frame: 2010-10-10 until 2019-11-05
 
 Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier.png)
 
 **The sharpe portfolio is:** 
-   
 - **Returns**       0.290213
 - **Volatility**    0.237612
 - **Sharpe Ratio**  1.221374
@@ -76,7 +66,6 @@ Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Pr
 - **UBS Weight**    0.012836
                 
 **The minimum variance portfolio is:**
- 
 - **Returns**       0.188358
 - **Volatility**    0.213229
 - **Sharpe Ratio**  0.883357
@@ -87,7 +76,6 @@ Efficient frontier: ![Alt Text](https://github.com/pescestefano96/Programming-Pr
 
 
 ### Credits
-
 We inspired ourselves and took some of the code from:
 
 - https://medium.com/python-data/effient-frontier-in-python-34b0c3043314
