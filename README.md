@@ -15,11 +15,11 @@ Our aim is to showcase to the user the efficient frontier of desired stocks with
 - All investors share the aim maximizing their expected returns
 - Commissions and taxes on the market are left out of consideration
 - All investors have access to the same sources and level of all necessary information about investment decisions
-- Investors have unlimited access to borrow and lend money at the risk free rate (For simplicity's sake a risk free rate of 0% is assumed for this project)
+- Investors have unlimited access to borrow and lend money at the risk free rate (for simplicity's sake a risk free rate of 0% is assumed for this project)
 
 ### The concept of the Efficient Frontier
 
-According to the theory, it is possible to build an "efficient frontier", which graphically represents the optimal portfolios that offer the highest possible expected return for a given level of risk. It is based on the principle of diversification, i.e. the reduction of the portfolio's risk (standard deviation) by adding additional assets to the same portfolio. In practice, an investor tries to populate the portfolio with securities that offer high returns, but whose combined standard deviation is less than their individual standard deviations. If the optimization of the return/risk paradigm is successful, the portfolio aligns along the efficient frontier. If there are portfolios with higher returns for the same level of risk, the portfolio is not optimal and lies below the efficient frontier.
+According to the theory, it is possible to build an "efficient frontier", which graphically represents the optimal portfolios that offer the highest possible expected return for a given level of risk. This is based on the principle of diversification, i.e. the reduction of the portfolio's risk (standard deviation) by adding additional assets to the same portfolio. In practice, an investor tries to populate the portfolio with securities that offer high returns, but whose combined standard deviation is less than their individual standard deviations. If the optimization of the return/risk paradigm is successful, the portfolio aligns along the efficient frontier. If there are portfolios with higher returns for the same level of risk, the portfolio is not optimal and lies below the efficient frontier.
 
 The following diagram gives an overview of this concept:
 ![Alt Text](https://github.com/pescestefano96/Programming-Project/blob/master/Efficient_frontier0.jpg)
