@@ -40,14 +40,14 @@ Two portfolios along the efficient frontier are of particular interest:
 ### How to use
 1. Make sure that you have installed all the necessary modules.
 
-2. When runing the code, you will be asked for how many stocks you want to analyze. When this is done, you have to input their tickers name. Yahoo finance is used to get the data, so make sure your tickers correpsond to the exiting ones on https://finance.yahoo.com/.
+2. When you run the code, you will be asked how many stocks you want to analyze. After that, you need to enter their ticker. Be aware that Yahoo finance is used to get the data, so make sure that your tickers match those available on https://finance.yahoo.com/.
 
 3. For the time frame of analysis, enter the desired starting date and the desired ending date under the format: YYYY-MM-DD.
 
-Depending on the compiler you're using, you may have to close the efficient frontier window to get the optimization of the two desired portfolios to appear.
+Depending on the compiler you are using, you may need to close the efficient frontier window in order to see the optimization of the two desired portfolios.
 
 ### Expected outcome
-The expected outcome is a graphical representation of the efficient frontier, displaying the maximum Sharpe ratio portfolio as well as the minimum variance portfolio according to the stocks and time frame of your inputs. In addition, for these two portfolios, you will see the return, volatility, sharpe ratio and stock weights.
+The expected outcome is the graphical representation of the efficient frontier according to the stocks and time frame chosen, also showing the maximum Sharpe ratio portfolio as well as the minimum variance portfolio. In addition, for these two portfolios, you will see the return, volatility, sharpe ratio and stock weights.
 
 #### Example
 Let's use 4 stocks: *Apple (AAPL); Credit Suisse (CS); AMAZON (AMZN); UBS (UBS).*
