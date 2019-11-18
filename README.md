@@ -5,7 +5,7 @@ This project is part of the course *"Programming - Introduction Level"* at the U
 Afterwards, the theoretical background and the structure of the code are explained.
 
 ### Context 
-Harry M. Markowitz is a 1990 Nobel prize winner for being a pioneer of the Modern Portfolio Theory (MPT), which deals with how investors should construct investment portfolios in order to the expected returns for given levels of risk. 
+Harry M. Markowitz is a 1990 Nobel prize winner for being a pioneer of the Modern Portfolio Theory (MPT), which deals with how investors should construct investment portfolios in order to maximize the expected returns for given levels of risk. 
 
 Assumptions of MPT:
 - Investors are rational and avoid risks whenever possible.
